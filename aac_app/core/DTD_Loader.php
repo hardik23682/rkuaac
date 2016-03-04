@@ -12,6 +12,7 @@ class DTD_Loader extends CI_Loader {
 		$vars['user_info'] = $CI->session->userdata('userinfo');
 		$vars['current_page'] = $router->fetch_class();
 		$vars['current_action'] = $router->fetch_method();
+
         if($return):
 			$content  = $this->view('header', $vars, $return);
 			$content  = $this->view('nav', $vars, $return);

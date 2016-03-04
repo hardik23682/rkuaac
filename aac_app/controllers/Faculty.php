@@ -11,4 +11,9 @@ class Faculty extends CI_Controller {
 	{
 		$this->load->template('faculty/dashboard');
 	}
+	public function newapp()
+	{
+		$this->load->template('faculty/app_part_A');
+	}
+
 }
